@@ -1,0 +1,8 @@
+# dsh-reme-obsidian bundle patch：挂载 ReMe → Obsidian 导入插件
+- insert:
+    - id: reme-obsidian
+      name: dsh-reme-obsidian
+      config:
+        remeDigestDir: 'D:\AI\deepseek harness\reme-workspace\digest'
+        vaultDir: 'D:\repository\my'
+        targetFolder: ReMe

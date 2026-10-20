@@ -1,0 +1,45 @@
+{
+  "name": "dsh-reme-obsidian",
+  "version": "0.2.0",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml"
+  ],
+  "description": "DeepSeek Harness 宿主端插件：把 ReMe 知识库（digest）导入 Obsidian 库的 ReMe/ 文件夹；设置页「导入知识库」入口 + reme_import_to_obsidian 工具",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "reme",
+    "obsidian"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    },
+    "manifestVersion": 1
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoyeziyinxing/dsh-reme-obsidian.git"
+  },
+  "homepage": "https://github.com/xiaoyeziyinxing/dsh-reme-obsidian",
+  "bugs": {
+    "url": "https://github.com/xiaoyeziyinxing/dsh-reme-obsidian/issues"
+  },
+  "author": "xiaoyeziyinxing"
+}
